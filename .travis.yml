@@ -1,0 +1,9 @@
+language: node_js
+deploy:
+  provider: npm
+  email: ash.npm.i16@gmail.com
+  api_key:
+    secure: kB7ltbD865PnhqxWRuBDvjlYUMGJLX5hBVDynGh48/z3gqQPbUG4ba1NG/xomBUbitwK+Zbd0Yl3HhJ7MOPd0wgJ3vUX+Fb523r1TGH13RQ+oAF2H4YYjgOzGd7mkItnAzAvjQgwic28m4PypuuZZFhicW4AiM+OdIBAf8UhtGBsS4fBBMBNWut9vZeXyu3sJbNMdJYQr/d2kl21zWz034IutGufQRABq3ROlku2Rc79LT4IrqOU3GxtN7/ubNc2/c0h+BU5LursRneccG5+LJ+tZDtLIsC0Q2pl1YGJZh6bjimRumFcux/jLXMsPhOOKSx3CDJm2Fe9b5DFQekpzqpRLGRujceeLIkJHf6rB4W0ssq//1+HtLObkK5yixcXfDPJJz0Ik6HmQ1W8yxZWwDiojQi2KFL3ShdRqqa5hQOSCb224jMRx5AJJLPmR8dxnMzXWZitsUmKFj5Zmvn6cSf2xxyV4/2GarZP4S4iMkJQcebwlY4fRYug1CKb/Rocy+P6AMsv9Q8VlEud2eL4Ev1vB1YYGjn6mYIESeq6gWoS8HD+WWkIjDLqXrQln3pIY6acJLTZyrYP9lbh+l1ZHqLFbIknqWa0+tkujx4jk+ftsSL8KvGoV/aKi9r7hXH+Bv9XbFitek/nBxQhgLq9eC/V7TWkfHLEzoyRq1VRvEY=
+  on:
+    tags: true
+    repo: ashmind/codemirror-addon-infotip

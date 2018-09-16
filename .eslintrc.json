@@ -1,0 +1,15 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 5
+    },
+    "env": {
+        "browser": true,
+        "amd": true
+    },
+    "rules": {
+        "quotes": ["error", "double"],
+        "no-invalid-this": "warn"
+    }
+}
