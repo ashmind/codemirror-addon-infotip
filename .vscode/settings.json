@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "Andrey",
+        "Shchekin",
+        "codemirror",
+        "infotip",
+        "tooltips",
+        "transitionend"
+    ],
+    "javascript.validate.enable": false,
+    "typescript.validate.enable": false
+}

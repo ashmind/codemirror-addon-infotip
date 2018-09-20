@@ -136,7 +136,13 @@
     var getInfo = cm.getHelper(coords, "infotip") || cm.state.infotip.getInfo;
 
     cm.state.infotip.lastCoords = coords;
-    if (cm.state.infotip.async || getInfo.async) {
+
+    if (!getInfo)
+      return;
+    var async = getInfo.async !== undefined
+              ? getInfo.async
+              : cm.state.infotip.async;
+    if (async) {
       if (tooltip.active && !isInRange(coords, tooltip.info.range))
         tooltip.hide();
       getInfo(cm, coords, cm.state.infotip.update);
