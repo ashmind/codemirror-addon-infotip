@@ -83,7 +83,7 @@
     var cm = this.CodeMirror;
     if (e.target !== cm.getWrapperElement())
       return;
-    tooltip.hide();
+    clear(this.CodeMirror);
   }
 
   function touchstart(e) {
@@ -125,7 +125,7 @@
     activeTimeout = setTimeout(function() {
       interaction(cm);
       activeTimeout = null;
-    }, 100);
+    }, cm.state.infotip.delay);
   }
 
   function interaction(cm) {
@@ -234,6 +234,7 @@
     state = {
       async: options.async,
       getInfo: options.getInfo,
+      delay: options.delay || 300,
       render: options.render,
       pointer: {}
     };
