@@ -1,6 +1,6 @@
 {
   "name": "codemirror-addon-infotip",
-  "version": "1.0.0-pre-20180921",
+  "version": "1.0.0-pre-20180923",
   "description": "InfoTip is a CodeMirror addon that provides context-based tooltips.",
   "author": "Andrey Shchekin (http://github.com/ashmind)",
   "license": "MIT",
@@ -21,6 +21,9 @@
   },
   "bugs": "https://github.com/ashmind/codemirror-addon-infotip/issues",
   "homepage": "https://ashmind.github.io/codemirror-addon-infotip",
+  "jest": {
+    "transform": {}
+  },
   "devDependencies": {
     "codemirror": "^5.18.2",
     "eslint": "^5.6.0",

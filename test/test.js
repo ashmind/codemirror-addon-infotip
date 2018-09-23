@@ -19,3 +19,27 @@ for (const delay of [100, 1000]) {
     expect(getInfo).toBeCalled();
   });
 }
+
+test("hover hides tooltip after 100ms if async", async () => {
+  driver.setup({ async: true, getInfo: jest.fn(), delay: 300 });
+
+  driver.show();
+  driver.cm.coordsChar.mockReturnValue({ line: 1, ch: 2 });
+  driver.mousemove();
+  jest.advanceTimersByTime(100);
+
+  expect(Array.from(driver.tooltip.classList))
+    .toContain("CodeMirror-infotip-hidden");
+});
+
+test("hover hides tooltip if not async and info is null", async () => {
+  driver.setup({ getInfo: () => null, delay: 300 });
+
+  driver.show();
+  driver.cm.coordsChar.mockReturnValue({ line: 1, ch: 2 });
+  driver.mousemove();
+  jest.advanceTimersByTime(300);
+
+  expect(Array.from(driver.tooltip.classList))
+    .toContain("CodeMirror-infotip-hidden");
+});
