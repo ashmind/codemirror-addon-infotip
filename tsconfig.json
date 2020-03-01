@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "types" : ["codemirror"],
+    "noEmit": true,
+    "noImplicitAny": true,
+    "strict": true
+  }
+}

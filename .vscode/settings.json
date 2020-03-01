@@ -8,5 +8,5 @@
         "transitionend"
     ],
     "javascript.validate.enable": false,
-    "typescript.validate.enable": false
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }
